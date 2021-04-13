@@ -14,8 +14,17 @@ for doc_index, doc in enumerate(docs):
         if doc_index not in docs_dict[word]:
             docs_dict[word][doc_index]= 0
         docs_dict[word][doc_index]+=1
-print(docs_dict['care'])        
-print(docs_dict['gain'])     
+#print(docs_dict['care'])        
+#print(docs_dict['gain'])     
+# pozostał filmik indeksowanie 6
+for q in docs_dict:
+    if q not in docs_dict:
+        print(q,[])
+    else:
+        word_array = docs_dict[q]
+        print(sorted(list(word_array.items()), reverse=True))
+
+
 
 
 
